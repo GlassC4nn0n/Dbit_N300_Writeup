@@ -29,3 +29,12 @@ The flash chip on board is an **AC2502 25Q32BVSIG**
 The UART interface is clearly labeled with GND, TX and RX 
 
 <img width="3072" height="4080" alt="Flash Chip   UART" src="https://github.com/user-attachments/assets/eaa68b4c-de91-4a10-8571-71767ca98300" />
+
+
+## Chips & Datasheets
+
+| Chipset                                | Datasheet                                                                |
+| -------------------------------------- | ------------------------------------------------------------------------ |
+| RTL8196E (Router network processor)    | https://www.datasheetcafe.com/rtl8196e-datasheet-realtek/                |
+| RTL8192ER (802.11bgn 2.4G single-chip) | https://www.datasheetcafe.com/rtl8192er-pdf-datasheet-26471/             |
+| AC2502 25Q32BVSIG                      | https://www.datasheetcafe.com/25q32bvsig-datasheet-w25q32bvssig-winbond/ |
