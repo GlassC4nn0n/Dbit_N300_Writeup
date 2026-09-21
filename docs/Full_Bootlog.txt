@@ -1,0 +1,177 @@
+Booting...  
+  
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+@  
+@ chip__no chip__id mfr___id dev___id cap___id size_sft dev_size chipSize  
+@ 0000000h 05e4016h 000005eh 0000040h 0000016h 0000000h 0000016h 0400000h  
+@ blk_size blk__cnt sec_size sec__cnt pageSize page_cnt chip_clk chipName  
+@ 0010000h 0000040h 0001000h 0000400h 0000100h 0000010h 000004eh ZB25VQ32B/D  
+@    
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  
+   
+---RealTek(RTL8196E)at 2025.08.12-13:39+0800 v3.4.11E [16bit](380MHz)  
+P0phymode=01, embedded phy  
+wait for multicast packet!  
+not find active multicast server!  
+check_image_header  return_addr:05010000 bank_offset:00000000  
+no rootfs signature at 00150000!  
+no rootfs signature at 00160000!  
+no rootfs signature at 001A0000!  
+Jump to image start=0x80c00000...  
+decompressing kernel:  
+Uncompressing Linux... done, booting the kernel.  
+done decompressing kernel.  
+start address: 0x80003780  
+Linux version 3.10.90 (jenkins@muserver) (gcc version 4.6.4 (Realtek RSDK-4.6.4 Build 2080) ) #en32 Tue Aug 12 13:42:09 CST 2025  
+CPU revision is: 0000cd01  
+Determined physical RAM map:  
+memory: 02000000 @ 00000000 (usable)  
+Zone ranges:  
+ Normal   [mem 0x00000000-0x01ffffff]  
+Movable zone start for each node  
+Early memory node ranges  
+ node   0: [mem 0x00000000-0x01ffffff]  
+icache: 16kB/16B, dcache: 8kB/16B, scache: 0kB/0B  
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 8128  
+Kernel command line:  console=ttyS0,38400 root=/dev/mtdblock1    
+PID hash table entries: 128 (order: -3, 512 bytes)  
+Dentry cache hash table entries: 4096 (order: 2, 16384 bytes)  
+Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)  
+Memory: 24620k/32768k available (3280k kernel code, 8148k reserved, 701k data, 176k init, 0k highmem)  
+SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1  
+NR_IRQS:128  
+console [ttyS0] enabled  
+Calibrating delay loop... 378.47 BogoMIPS (lpj=1892352)  
+pid_max: default: 4096 minimum: 301  
+Mount-cache hash table entries: 512  
+reg e0=0  
+reg e1=0  
+reg e2=0  
+reg e3=0  
+reg e4=0  
+reg e5=0  
+reg e6=0  
+reg e7=0  
+reg f0=0  
+reg f1=0  
+reg f2=0  
+reg f3=0  
+reg f4=0  
+reg f5=0  
+reg f6=0  
+NET: Registered protocol family 16  
+bio: create slab <bio-0> at 0  
+NET: Registered protocol family 2  
+TCP established hash table entries: 512 (order: 0, 4096 bytes)  
+TCP bind hash table entries: 512 (order: -1, 2048 bytes)  
+TCP: Hash tables configured (established 512 bind 512)  
+TCP: reno registered  
+UDP hash table entries: 256 (order: 0, 4096 bytes)  
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)  
+NET: Registered protocol family 1  
+squashfs: version 4.0 (2009/01/31) Phillip Lougher  
+msgmni has been set to 48  
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254)  
+io scheduler noop registered  
+io scheduler deadline registered  
+io scheduler cfq registered (default)  
+Serial: 8250/16550 driver, 1 ports, IRQ sharing disabled  
+serial8250: ttyS0 at MMIO 0x18002000 (irq = 9) is a 16550A  
+Realtek GPIO Driver for Flash Reload Default  
+SPI INIT  
+------------------------- Force into Single IO Mode ------------------------    
+|No chipID  Sft chipSize blkSize secSize pageSize sdCk opCk      chipName    |  
+| 0 5e4016h  0h  400000h  10000h   1000h     100h   80    0       ZB25VQ32B/D|  
+----------------------------------------------------------------------------    
+SPI flash(ZB25VQ32B/D) was found at CS0, size 0x400000  
+4 rtkxxpart partitions found on MTD device flash_bank_1  
+Creating 4 MTD partitions on "flash_bank_1":  
+0x000000000000-0x000000210000 : "boot+cfg+linux"  
+0x000000210000-0x0000003c0000 : "rootfs"  
+0x0000003c0000-0x0000003e0000 : "cwmp transfer"  
+0x0000003e0000-0x000000400000 : "cwmp notification"  
+PPP generic driver version 2.4.2  
+NET: Registered protocol family 24  
+MPPE/MPPC encryption/compression module registered  
+Realtek WLAN driver - version 1.7 (2015-10-30)(SVN:Unversioned directory)  
+Adaptivity function - version 9.3.4  
+CFG0    
+98 - 25MHz Clock Source  
+Find Port=0 Device:Vender ID=818b10ec  
+MACHAL_version_init  
+##########(wlan0)##########  
+SKB_BUF_SIZE[2472] MAX_SKB_NUM[400]  
+NUM_RX_DESC[256] NUM_TX_DESC[300]  
+MAX_RX_BUF_LEN[2032]  
+############################  
+nf_conntrack version 0.5.0 (384 buckets, 1536 max)  
+ip_tables: (C) 2000-2006 Netfilter Core Team  
+TCP: cubic registered  
+NET: Registered protocol family 17  
+l2tp_core: L2TP core driver, V2.0  
+8021q: 802.1Q VLAN Support v1.8  
+Realtek FastPath:v1.03  
+  
+Probing RTL819X NIC-kenel stack size order[1]...  
+eth0 added. vid=9 Member port 0x10f...  
+eth1 added. vid=8 Member port 0x10...  
+[peth0] added, mapping to [eth1]...  
+VFS: Mounted root (squashfs filesystem) readonly on device 31:1.  
+Freeing unused kernel memory: 176K (803e4000 - 80410000)  
+init started: BusyBox v1.13.4 (2025-08-12 13:40:45 CST)  
+set Time Error for tm!type:3, enable:1, percent1  
+******************  
+sysconf init gw all    
+***************  
+Init Start...  
+******************  
+sysconf wlanapp kill wlan0    
+***************  
+open /proc/br_wlanblock: Permission denied  
+Init bridge interface...  
+device eth0 entered promiscuous mode  
+device wlan0 entered promiscuous mode  
+WlanSupportAbility = 0x3  
+[ODM_software_init]    
+clock 25MHz  
+  
+  
+************* Initialize MAC/PHY parameter *************  
+[MAC_REG_8192Emp]  
+RTL8192E_MAC_PHY_Parameter_v016_MP_20130705  
+[PHY_REG_8192Emp]  
+RTL8192E_MAC_PHY_Parameter_v043_MP_20141229  
+[PHY_REG_PG_8192E_new]  
+RL6286_MAC_PHY_Parameter_v024_20130125--变更基于30010021验证  
+[AGC_TAB_8192Emp]  
+RTL8192E_MAC_PHY_Parameter_v043_MP_20141229  
+RadioA_8192Emp  
+RTL8192E_MAC_PHY_Parameter_v043_MP_20141229  
+[RadioB_8192Emp]  
+RTL8192E_MAC_PHY_Parameter_v043_MP_20141229  
+[PHY_ConfigTXPwrTrackingWithParaFile 4352]  
+[PHY_ConfigTXPwrTrackingWithParaFile 4422] read_bytes=2283  
+[TxPowerTrack_AP]  
+br0: port 2(wlan0) entered forwarding state  
+br0: port 2(wlan0) entered forwarding state  
+br0: port 1(eth0) entered forwarding state  
+br0: port 1(eth0) entered forwarding state  
+syslog will use 64KB for log(7 rotate, 1 original, 8KB for each)  
+Init Wlan application...  
+  
+WiFi Simple Config v2.20-wps2.0 (2018.09.26-02:25+0000).  
+  
+Register to wlan0  
+iwcontrol RegisterPID to (wlan0)  
+route: SIOCDELRT: No such process  
+IEEE 802.11f (IAPP) using interface br0 (v1.8)  
+Init WAN Interface...  
+open /proc/sys/net/ipv4/rt_cache_rebuild_count: No such file or directory  
+sh: check_internet: not found  
+/etc/init.d/rcS: line 96: can't create /proc/sys/net/ipv4/route/secret_interval: nonexistent directory  
+/etc/init.d/rcS: line 107: can't create /proc/sys/net/ipv4/rt_cache_rebuild_count: nonexistent directory  
+boa: server version Boa  
+boa: server built Aug 1type:3, enable:0, percent0  
+2 2025 at 13:40:42.  
+boa: starting server pid=289, port 80  
+Startup Ok  
