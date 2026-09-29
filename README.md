@@ -21,8 +21,7 @@ Full walkthrough available in [`docs/`](docs/). Brief overview:
 3. Firmware extraction (FAT/unblob → SquashFS)
 4. Boot chain analysis (`rcS`, `rcS_32M`, `startup.sh`, `init.sh`, `post_startup.sh`)
 5. Credential/key material discovery (`/etc/`)
-6. Static binary analysis (`rabin2`, `strings`) on network/config binaries
-7. Dynamic analysis (EMBA)
+6. Dynamic analysis (EMBA)
 
 **Tools used:** FAT, `openssl`, `strings`, `grep`, hashcat, EMBA
 
